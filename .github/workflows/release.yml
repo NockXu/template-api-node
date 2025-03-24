@@ -19,10 +19,6 @@ jobs:
 
          - name: Checking out code
            uses: actions/checkout@v4
-           with:
-              fetch-depth: 0
-              persist-credentials: true
-              token: ${{ steps.generate_token.outputs.token }}
 
          - name: Setting up Node
            uses: actions/setup-node@v4
